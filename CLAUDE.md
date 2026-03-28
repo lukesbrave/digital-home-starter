@@ -85,7 +85,11 @@ npm run dev
 ```
 
 ### Step 7: Customize Your Pages
-Every page has placeholder content marked with `[YOUR BRAND]`, `[Your Headline]`, etc. Open each page in `src/app/` and replace the placeholders with your actual content. Claude Code can help — say "help me customize the homepage."
+This starter is infrastructure, not a finished website — the design is yours to build. Every page has placeholder content marked with `[YOUR BRAND]`, `[Your Headline]`, etc. Open each page in `src/app/` and replace the placeholders with your actual content, brand colors, fonts, and styling.
+
+**[Watch the customization walkthrough →](https://youtu.be/89Fh_Ppw1A8?si=BddgY8Ny7qXMiNEc)**
+
+Claude Code can help — say "help me customize the homepage."
 
 ### Step 8: Deploy to Cloudflare
 ```bash

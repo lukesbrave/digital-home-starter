@@ -40,6 +40,8 @@ This is the **Frontend starter** — a skeleton website with the full architectu
 - Every placeholder marked with `[YOUR BRAND]`, `[Your Headline]`, etc.
 - Dark theme by default, system fonts, ready to style
 
+> **This is infrastructure, not a finished website.** The starter ships with placeholder text and minimal styling on purpose — the design is yours to build. Every page is functional and ready to customize with your brand, colors, fonts, and content. **[Watch the setup walkthrough →](https://youtu.be/89Fh_Ppw1A8?si=BddgY8Ny7qXMiNEc)**
+
 ## Getting Started
 
 1. **Clone and install**
