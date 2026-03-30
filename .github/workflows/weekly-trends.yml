@@ -1,9 +1,13 @@
 name: Weekly Trend Scan
 
+# NOTE: This workflow is coming soon — the /api/trend-scan endpoint is not yet
+# implemented in the backend. Uncomment the schedule below once you've built
+# the trend-scan route (see CLAUDE.md for guidance on adding new agent routes).
+
 on:
-  schedule:
-    # Monday at 10am UTC
-    - cron: '7 10 * * 1'
+  # schedule:
+  #   # Monday at 10am UTC
+  #   - cron: '7 10 * * 1'
   workflow_dispatch: {}
 
 jobs:
