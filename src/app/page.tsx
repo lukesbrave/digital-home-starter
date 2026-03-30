@@ -6,20 +6,20 @@ export default function HomePage() {
       <section className="min-h-screen px-6 pt-32 pb-20 flex items-center">
         <div className="max-w-[1400px] mx-auto w-full grid gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(360px,0.85fr)] items-center">
           <div>
-            <div className="flex items-center justify-between gap-6 pb-6 mb-8 border-b border-white/10 text-[0.65rem] uppercase tracking-[0.22em] font-mono text-white/45">
+            <div className="flex items-center justify-between gap-6 pb-6 mb-8 border-b border-white/10 text-[0.72rem] font-medium text-white/45">
               <span>Open-Source Website Starter</span>
               <span>Ready To Customize</span>
             </div>
 
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.28em] text-white/45 mb-6">
+            <p className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-[0.78rem] font-medium text-white/60 mb-6">
               Your Digital Home starts here
             </p>
-            <h1 className="text-5xl md:text-7xl xl:text-[7.5rem] font-semibold uppercase tracking-[-0.06em] text-white leading-[0.92] mb-6">
-              Your Website
+            <h1 className="text-5xl md:text-7xl xl:text-[7.1rem] font-semibold tracking-[-0.075em] text-white leading-[0.94] mb-6">
+              Your website
               <br />
-              Foundation,
+              foundation,
               <br />
-              Ready To Build On.
+              ready to build on.
             </h1>
             <p className="text-lg md:text-2xl text-neutral-300 max-w-3xl leading-relaxed">
               A polished, open-source starter for founders, consultants, and agencies who want an owned
@@ -30,21 +30,21 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center text-sm font-semibold uppercase tracking-wider bg-white text-black px-8 py-3 hover:bg-transparent hover:text-white border border-white transition-all"
+                className="inline-flex items-center justify-center rounded-full text-base font-medium bg-white text-black px-8 py-3.5 hover:bg-transparent hover:text-white border border-white transition-all"
               >
-                Explore The Starter
+                Explore the starter
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center text-sm font-semibold uppercase tracking-wider bg-transparent text-white px-8 py-3 hover:bg-white hover:text-black border border-white/30 transition-all"
+                className="inline-flex items-center justify-center rounded-full text-base font-medium bg-transparent text-white px-8 py-3.5 hover:bg-white hover:text-black border border-white/20 transition-all"
               >
-                See How To Shape It
+                See how to shape it
               </Link>
             </div>
           </div>
 
-          <div className="border border-white/10 bg-white/[0.02]">
-            <div className="grid grid-cols-2 gap-px bg-white/10">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-3">
+            <div className="grid grid-cols-2 gap-3">
               {[
                 { label: "Hero", note: "Replace with your headline, value prop, and CTA." },
                 { label: "Brand", note: "Apply your colors, typography, and visual direction." },
@@ -53,12 +53,22 @@ export default function HomePage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="min-h-[220px] bg-black px-6 py-5 flex flex-col justify-between"
+                  className="min-h-[220px] rounded-[1.6rem] border border-white/8 px-6 py-5 flex flex-col justify-between"
+                  style={{
+                    background:
+                      item.label === 'Hero'
+                        ? 'linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03))'
+                        : item.label === 'Brand'
+                          ? 'linear-gradient(180deg, rgba(245,245,245,0.05), rgba(255,255,255,0.015))'
+                          : item.label === 'Pages'
+                            ? 'linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015))'
+                            : 'linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))',
+                  }}
                 >
-                  <span className="font-mono text-[0.6rem] uppercase tracking-[0.22em] text-white/35">
+                  <span className="inline-flex w-fit rounded-full border border-white/10 bg-black/30 px-3 py-1 text-[0.68rem] font-medium tracking-[0.01em] text-white/45">
                     {item.label}
                   </span>
-                  <p className="text-sm text-neutral-300 leading-relaxed max-w-[20ch]">
+                  <p className="text-[0.98rem] text-neutral-300 leading-relaxed max-w-[20ch]">
                     {item.note}
                   </p>
                 </div>
@@ -239,15 +249,15 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center text-sm font-semibold uppercase tracking-wider bg-white text-black px-8 py-3 hover:bg-transparent hover:text-white border border-white transition-all"
+              className="inline-flex items-center justify-center rounded-full text-base font-medium bg-white text-black px-8 py-3.5 hover:bg-transparent hover:text-white border border-white transition-all"
             >
-              Customize The Pages
+              Customize the pages
             </Link>
             <Link
               href="/blog"
-              className="inline-flex items-center justify-center text-sm font-semibold uppercase tracking-wider bg-transparent text-white px-8 py-3 hover:bg-white hover:text-black border border-white/30 transition-all"
+              className="inline-flex items-center justify-center rounded-full text-base font-medium bg-transparent text-white px-8 py-3.5 hover:bg-white hover:text-black border border-white/20 transition-all"
             >
-              View The Blog Structure
+              View the blog structure
             </Link>
           </div>
         </div>
