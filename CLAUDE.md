@@ -6,6 +6,16 @@ This is an open-source, AI-native website and content system. If someone opens t
 
 If you just cloned this repo, follow these steps in order. You need both this repo (Frontend) and the [Digital Home Backend Starter](https://github.com/lukesbrave/digital-home-backend-starter) repo.
 
+### Recommended Setup Flow
+
+1. Create one parent folder on your machine called `digital-home`
+2. Open that folder in Claude Code
+3. Do the Frontend setup in **Chat 1**
+4. Do the Backend setup in **Chat 2**
+5. Use the **same Supabase project** for both repos
+
+Using a separate chat for each repo helps Claude stay in the correct project context and avoids confusion between frontend and backend files, migrations, and environment variables.
+
 ### Step 1: Create a Supabase Project
 1. Go to [supabase.com](https://supabase.com) and create a free project
 2. Save these values from Settings > API:

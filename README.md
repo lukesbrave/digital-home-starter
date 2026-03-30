@@ -44,6 +44,16 @@ This is the **Frontend starter** — a website starter with the full architectur
 
 ## Getting Started
 
+### Recommended Setup Flow
+
+1. Create one parent folder on your machine called `digital-home`
+2. Open that folder in Claude Code
+3. In **Chat 1**, paste the Frontend Starter repo and complete the frontend setup first
+4. In **Chat 2**, paste the Backend Starter repo and complete the backend setup second
+5. Use the **same Supabase project** for both repos
+
+Using a separate chat for each repo helps Claude stay in the correct project context and avoids confusion between frontend and backend files, migrations, and environment variables.
+
 1. **Clone both starters**
    ```bash
    git clone https://github.com/lukesbrave/digital-home-starter.git
