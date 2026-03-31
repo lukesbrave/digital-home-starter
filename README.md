@@ -40,7 +40,7 @@ This is the **Frontend starter** — a website starter with the full architectur
 - Neutral starter copy and structure you can replace with your own brand
 - Dark theme baseline, ready for Claude-guided redesign
 
-> **This is infrastructure with a neutral baseline, not a finished brand site.** The starter is meant to give you a working architecture plus a clean foundation you can redesign around your own brand, content, colors, and typography. **[Watch the setup walkthrough →](https://youtu.be/89Fh_Ppw1A8?si=BddgY8Ny7qXMiNEc)**
+> **This is infrastructure with a neutral baseline, not a finished brand site.** The starter is meant to give you a working architecture plus a clean foundation you can redesign around your own brand, content, colors, and typography.
 
 ## Getting Started
 
@@ -56,15 +56,15 @@ Using a separate chat for each repo helps Claude stay in the correct project con
 
 1. **Clone both starters**
    ```bash
-   git clone https://github.com/lukesbrave/digital-home-starter.git
+   git clone https://github.com/lukesbrave/digital-home-fontend-starter.git
    git clone https://github.com/lukesbrave/digital-home-backend-starter.git
    ```
 
-2. **Set up Supabase** — create one project at [supabase.com](https://supabase.com), run the Frontend migrations in `digital-home-starter/supabase/migrations/` (`001` through `011`), then run the Backend migration in `digital-home-backend-starter/supabase/migrations/001_backend_core.sql`
+2. **Set up Supabase** — create one project at [supabase.com](https://supabase.com), run the Frontend migrations in `digital-home-fontend-starter/supabase/migrations/` (`001` through `011`), then run the Backend migration in `digital-home-backend-starter/supabase/migrations/001_backend_core.sql`
 
 3. **Set up the Frontend environment**
    ```bash
-   cd digital-home-starter
+   cd digital-home-fontend-starter
    cp .env.local.example .env.local
    npm install
    ```

@@ -121,8 +121,6 @@ npm run dev
 ### Step 8: Customize Your Pages
 This starter is infrastructure plus a neutral baseline, not a finished website. Claude Code should treat the current pages as a starting point, then redesign them around the user's actual brand, offer, audience, and visual direction.
 
-**[Watch the customization walkthrough →](https://youtu.be/89Fh_Ppw1A8?si=BddgY8Ny7qXMiNEc)**
-
 Claude Code can help — say "help me redesign this starter using my Prompt Builder output."
 
 ### Step 9: Deploy to Cloudflare
@@ -188,7 +186,7 @@ This is a Next.js 15 website starter deployed on Cloudflare Workers with Supabas
 
 ## Project Structure
 ```
-/digital-home-starter/
+/digital-home-fontend-starter/
   CLAUDE.md              <- You are here
   /content-corpus-examples  <- Template brand files (copy to content-corpus/)
   /supabase/migrations      <- Database schema (run in order)

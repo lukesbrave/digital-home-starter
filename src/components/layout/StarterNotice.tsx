@@ -2,7 +2,6 @@ type StarterNoticeProps = {
   compact?: boolean;
 };
 
-const VIDEO_URL = 'https://youtu.be/89Fh_Ppw1A8?si=BddgY8Ny7qXMiNEc';
 const PROMPT_BUILDER_URL = 'https://prompt-builder-pink.vercel.app';
 
 export default function StarterNotice({ compact = false }: StarterNoticeProps) {
@@ -19,14 +18,6 @@ export default function StarterNotice({ compact = false }: StarterNoticeProps) {
           The structure is here. Now shape the design, copy, and visual direction to fit your brand.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
-          <a
-            href={VIDEO_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center rounded-full border border-white/10 px-3.5 py-1.5 text-white/70 transition-colors hover:text-white"
-          >
-            Watch part one
-          </a>
           <a
             href={PROMPT_BUILDER_URL}
             target="_blank"
@@ -56,14 +47,6 @@ export default function StarterNotice({ compact = false }: StarterNoticeProps) {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href={VIDEO_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full text-sm font-medium bg-white text-black px-5 py-2.5 hover:bg-transparent hover:text-white border border-white transition-all"
-          >
-            Watch part one
-          </a>
           <a
             href={PROMPT_BUILDER_URL}
             target="_blank"
