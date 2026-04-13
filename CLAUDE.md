@@ -16,6 +16,9 @@ If you just cloned this repo, follow these steps in order. You need both this re
 
 Using a separate chat for each repo helps Claude stay in the correct project context and avoids confusion between frontend and backend files, migrations, and environment variables.
 
+### Step 0: Check for Node.js
+Before anything else, check if the user has Node.js installed by running `node -v`. If the command fails or is not found, walk them through installing it: go to [nodejs.org](https://nodejs.org), download the LTS version, and run the installer. They need Node.js to run this project.
+
 ### Step 1: Create a Supabase Project
 1. Go to [supabase.com](https://supabase.com) and create a free project
 2. Save these values from Settings > API:
