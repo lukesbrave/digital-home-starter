@@ -1,11 +1,15 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "digital-home-frontend",
-  "compatibility_date": "2025-12-01",
+  "compatibility_date": "2026-05-01",
   "compatibility_flags": ["nodejs_compat"],
   "main": ".open-next/worker.js",
   "assets": {
     "binding": "ASSETS",
     "directory": ".open-next/assets"
+  },
+  "observability": {
+    "enabled": true
   },
   // Runtime duplicates of NEXT_PUBLIC_ vars — Workers can't read NEXT_PUBLIC_ at runtime
   // Replace these with your own Supabase credentials

@@ -2,6 +2,12 @@
  * Edge Middleware
  * Runs on every request at the edge (Cloudflare Workers).
  *
+ * NOTE: Next 16 deprecated the `middleware.ts` filename in favor of
+ * `proxy.ts`, but the new `proxy` runtime is nodejs-only and OpenNext on
+ * Cloudflare Workers requires Edge runtime. We deliberately keep the
+ * legacy `middleware.ts` filename + `middleware` export until OpenNext +
+ * Next add support for Edge proxies.
+ *
  * Responsibilities:
  * 1. Parse UTM parameters + detect referrer source
  * 2. Detect AI traffic (ChatGPT, Perplexity, Claude, Gemini referrer patterns)
